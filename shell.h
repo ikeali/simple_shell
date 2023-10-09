@@ -2,7 +2,7 @@
 #define SHELL_H
 
 
-int _intadd(int int1, int int2);
+int intadd(int int1, int int2);
 
 
 
