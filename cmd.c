@@ -23,25 +23,23 @@ void execute_command(const char *command)
 {
 	if (strlen(command) == 0)
 		return;
-	char *token;
 	char *args[MAX_COMMAND_LENGTH];
 	int i = 0;
 
-	token = strtok((char *)command, " \n");
+	char *token = strtok((char *)command, " \n");
 	while (token != NULL)
 	{
-	args[i++] = token;
-	token = strtok(NULL, " \n");
+		args[i++] = token;
+		token = strtok(NULL, " \n");
 	}
 	args[i] = NULL;
-
-	if (execvp(args[0], args) == -1)
+	char *program = "/bin/ls";
+	if (execve(program, args, NULL) == -1)
 	{
-		perror("execvp");
+		perror("malloc");
 		exit(EXIT_FAILURE);
 	}
 }
-
 /**
  * main - Entry point of the shell program.
  * Return: Always returns 0 to indicate successful execution.
