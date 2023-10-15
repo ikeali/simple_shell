@@ -96,10 +96,9 @@ typedef struct passinfo
 	int cmd_buf_type; /* CMD_type ||, &&, ; */
 	int readfd;
 	int histcount;
-	struct builtin *builtin_table;
 
 } info_t;
-int hsh(info_t *, char **);
+
 #define INFO_INIT \
 {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
 		0, 0, 0}
@@ -114,8 +113,12 @@ typedef struct builtin
 {
 	char *type;
 	int (*func)(info_t *);
-	builtin_table;
-}
+	
+} builtin_table;
+typedef struct denum
+{
+	int cnt;
+} denum;
 
 /* toem_shloop.c */
 
