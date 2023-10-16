@@ -12,7 +12,6 @@
 #include <fcntl.h>
 #include <errno.h>
 
-/* for read/write buffers */
 
 #define READ_BUF_SIZE 1024
 #define WRITE_BUF_SIZE 1024
@@ -97,6 +96,7 @@ typedef struct passinfo
 	int cmd_buf_type; /* CMD_type ||, &&, ; */
 	int readfd;
 	int histcount;
+
 } info_t;
 
 #define INFO_INIT \
@@ -113,7 +113,12 @@ typedef struct builtin
 {
 	char *type;
 	int (*func)(info_t *);
+	
 } builtin_table;
+typedef struct denum
+{
+	int cnt;
+} denum;
 
 /* toem_shloop.c */
 
