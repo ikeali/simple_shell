@@ -113,7 +113,7 @@ typedef struct builtin
 {
 	char *type;
 	int (*func)(info_t *);
-	
+
 } builtin_table;
 typedef struct denum
 {
