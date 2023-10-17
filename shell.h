@@ -20,5 +20,9 @@ typedef struct
 char *read_line(Buffer *buf);
 void refill_buffer(Buffer *buf);
 char *custom_getline(void);
+void custom_setenv(const char *variable, const char *value)
+void custom_unsetenv(const char *variable)
+void printenv(const char *var_name)
+void handle_exit(const char *arg)
 
 #endif  // SHELL_H
