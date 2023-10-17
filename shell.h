@@ -3,13 +3,14 @@
 
 char **get_environment();
 #define CHUNK_SIZE 100
+#define MAX_COMMAND_LENGTH 100
 
 void display_prompt(void);
 void handle_env(void);
 void handle_exit(const char *command);
 char *construct_full_path(const char *command);
 void execute_command(const char *full_path, char *const args[]);
-
+void tokenize(const char *command)
 typedef struct
 {
         char buffer[CHUNK_SIZE];
