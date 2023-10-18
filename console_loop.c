@@ -54,7 +54,7 @@ int hsh(info_t *info, char **av)
  * 2 if builtin signals exit()
  */
 
-nt find_builtin(info_t *info)
+int find_builtin(info_t *info)
 {
 	int i, built_in_ret = -1;
 	builtin_table builtintbl[] = {
