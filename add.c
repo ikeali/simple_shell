@@ -16,7 +16,7 @@
 /**
  * main - Entry point of the program.
  *
- * Return: 0 on success.
+ * Return: 0 (success)
  */
 	int main(void)
 	{
