@@ -9,7 +9,7 @@
  * Return: size of list
  */
 
-list_t *add_node(list_t **head, const char *str, int num)
+list_t *add_node_end(list_t **head, const char *str, int num)
 {
 	list_t *new_head;
 
@@ -74,4 +74,4 @@ list_t *add_node_end(list_t **head, const char *str, int num)
 	else
 		*head = new_node;
 	return (new_node);
-
+}
