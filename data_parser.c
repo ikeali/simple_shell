@@ -87,8 +87,3 @@ char *find_path(info_t *info, char *pathstr, char *cmd)
 	}
 	return (NULL);
 }
-<<<<<<< HEAD
-
-	
-=======
->>>>>>> c7561b95e3560276681278cea1d58e5ebb44b7a4
