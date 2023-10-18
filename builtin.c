@@ -4,7 +4,7 @@
 
 #define MAX_COMMAND_LENGTH 100
 /**
- * handle_exit - Handle the built-in exit command.
+ * handle_exit - this Handle the built-in exit command.
  * @arg: The argument containing the exit status.
  * Return: void
  *
