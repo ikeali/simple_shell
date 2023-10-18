@@ -1,5 +1,7 @@
 #include "shell.h"
 #include <stdio.h>
+#include <stddef.h>
+
 
 /**
  * intadd - Adds two integers.
