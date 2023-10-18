@@ -9,7 +9,8 @@ void display_prompt(void);
 void handle_env(void);
 void handle_exit(const char *command);
 char *construct_full_path(const char *command);
-void execute_command(const char *full_path, char *const args[]);
+/*void execute_command(const char *full_path, char *const args[]);*/
+void execute_command(const char *command);
 void tokenize(const char *command);
 
 	
