@@ -3,30 +3,33 @@
 #include <string.h>
 
 #define MAX_COMMAND_LENGTH 100
+
 /**
- * handle_exit - this Handle the built-in exit command.
- * @arg: The argument containing the exit status.
+ * handle_exit - This handle the built-in exit command
+ * @arg: This argument containing the exit status
  * Return: void
  *
  * This function processes the exit command, terminating the shell with the
  */
+
 void handle_exit(const char *arg)
 {
-        if (arg == NULL)
-        {
-                exit(EXIT_SUCCESS);
-        }
-        else
-        {
-                int status = atoi(arg);
+	if (arg == NULL)
+	{
+		exit(EXIT_SUCCESS);
+	}
+	else
+	{
+		int status = atoi(arg);
 
-                exit(status);
-        }
+		exit(status);
+	}
 }
+
 /**
  * main - Entry point of the shell program.
  * Return: Always returns 0 to indicate successful execution.
-  */
+ */
 
 int main(void)
 {
