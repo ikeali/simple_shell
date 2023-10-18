@@ -24,5 +24,7 @@ void custom_setenv(const char *variable, const char *value)
 void custom_unsetenv(const char *variable)
 void printenv(const char *var_name)
 void handle_exit(const char *arg)
+void update_pwd(void)
+void change_directory(const char *path)
 
 #endif  // SHELL_H
