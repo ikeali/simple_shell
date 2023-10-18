@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * intadd - Adds two integers.
- * @int1: the first integer.
- * @int2: the second integer.
+ * intadd - This adds two integers
+ * @int1: First integer
+ * @int2: the second integer
  *
  * Return: Sum of int1 and int2.
  */
