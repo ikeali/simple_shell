@@ -6,7 +6,6 @@
  * constant function prototype
  * Return: 0 (success)
  */
-
 char **get_environ(info_t *info)
 {
 	if (!info->environ || info->env_changed)

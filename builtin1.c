@@ -86,7 +86,7 @@ int print_alias(list_t *node)
 }
 
 /**
- * _myalias - this mimics the alias builtin
+ * _myalias - this mimic the alias builtin
  * @info: Structure containing potential argument, used to maintain
  * constant function prototype
  * Return: 0 (success)
